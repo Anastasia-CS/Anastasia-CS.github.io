@@ -4,6 +4,58 @@
   
   
   <entry>
+    <title></title>
+    <link href="/2024/05/29/%E5%BF%AB%E9%80%9F%E6%AF%94%E8%BE%83%E4%B8%A4%E4%B8%AAsimulink%E6%A8%A1%E5%9E%8B/"/>
+    <url>/2024/05/29/%E5%BF%AB%E9%80%9F%E6%AF%94%E8%BE%83%E4%B8%A4%E4%B8%AAsimulink%E6%A8%A1%E5%9E%8B/</url>
+    
+    <content type="html"><![CDATA[<p>快速比较两个simulink模型</p><p>【步骤】</p><ol><li>打开比较窗口</li></ol><p><img src="./Figure/%E5%BF%AB%E9%80%9F%E6%AF%94%E8%BE%83%E4%B8%A4%E4%B8%AAsimulink%E6%A8%A1%E5%9E%8B-1.png" alt="快速比较两个simulink模型-1"></p><ol start="2"><li>选择比较文件</li></ol><p><img src="./Figure/%E5%BF%AB%E9%80%9F%E6%AF%94%E8%BE%83%E4%B8%A4%E4%B8%AAsimulink%E6%A8%A1%E5%9E%8B-2.png" alt="快速比较两个simulink模型-2"></p><p>【比较过程】</p><p><img src="./Figure/%E5%BF%AB%E9%80%9F%E6%AF%94%E8%BE%83%E4%B8%A4%E4%B8%AAsimulink%E6%A8%A1%E5%9E%8B-3.png" alt="快速比较两个simulink模型-3"></p><p>【比较结果】</p><p><img src="./Figure/%E5%BF%AB%E9%80%9F%E6%AF%94%E8%BE%83%E4%B8%A4%E4%B8%AAsimulink%E6%A8%A1%E5%9E%8B-4.png" alt="快速比较两个simulink模型-4"></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/2024/05/29/mermaid%E7%AC%94%E8%AE%B0/"/>
+    <url>/2024/05/29/mermaid%E7%AC%94%E8%AE%B0/</url>
+    
+    <content type="html"><![CDATA[<h2 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h2><figure class="highlight coq"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs coq">graph TD;<br>    A[Christmas] --&gt;|<span class="hljs-type">Get</span> money| <span class="hljs-type">B</span>(Go shopping)<br>    B --&gt; C&#123;<span class="hljs-keyword">Let</span> me think&#125;<br>    C --&gt;|<span class="hljs-type">One</span>| <span class="hljs-type">D</span>[Laptop]<br>    C --&gt;|<span class="hljs-type">Two</span>| <span class="hljs-type">E</span>[iPhone]<br>    C --&gt;|<span class="hljs-type">Three</span>| <span class="hljs-type">F</span>[fa:fa-car Car]<br></code></pre></td></tr></table></figure><pre><code class=" mermaid">graph TD;    A[Christmas] --&gt;|Get money| B(Go shopping)    B --&gt; C&#123;Let me think&#125;    C --&gt;|One| D[Laptop]    C --&gt;|Two| E[iPhone]    C --&gt;|Three| F[fa:fa-car Car]</code></pre>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/2024/05/29/PyTorch%E5%AE%89%E8%A3%85/"/>
+    <url>/2024/05/29/PyTorch%E5%AE%89%E8%A3%85/</url>
+    
+    <content type="html"><![CDATA[<h1 id="PyTorch安装问题"><a href="#PyTorch安装问题" class="headerlink" title="PyTorch安装问题"></a>PyTorch安装问题</h1><p><a href="https://blog.csdn.net/Thebest_jack/article/details/123455215">可参考博客</a></p><p>问题1：Python版本问题，当前版本3.12.0</p><figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs verilog">Collecting <span class="hljs-keyword">package</span> metadata (current_repodata<span class="hljs-variable">.json</span>): done<br>Solving environment: failed <span class="hljs-keyword">with</span> <span class="hljs-keyword">initial</span> frozen <span class="hljs-keyword">solve</span>. Retrying <span class="hljs-keyword">with</span> flexible <span class="hljs-keyword">solve</span>.<br>Solving environment: failed <span class="hljs-keyword">with</span> repodata from current_repodata<span class="hljs-variable">.json</span>, will retry <span class="hljs-keyword">with</span> next repodata source.<br><br>esolvePackageNotFound:                                                                      - python=<span class="hljs-number">3</span><span class="hljs-variable">.1</span>                                                        <br></code></pre></td></tr></table></figure><p>解决：重新创建虚拟环境，配Python3.9</p><p>​                                      </p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/2024/05/29/Anaconda%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/"/>
+    <url>/2024/05/29/Anaconda%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Anaconda常用指令"><a href="#Anaconda常用指令" class="headerlink" title="Anaconda常用指令"></a>Anaconda常用指令</h1><p>创建python虚拟环境：</p><figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs excel">conda create -<span class="hljs-built_in">n</span> 虚拟环境名<br></code></pre></td></tr></table></figure><p>查看虚拟环境列表：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">conda <span class="hljs-built_in">env</span> list<br></code></pre></td></tr></table></figure><p>进入虚拟环境：</p><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs applescript">conda <span class="hljs-built_in">activate</span> 虚拟环境名<br></code></pre></td></tr></table></figure><p>退出虚拟环境：</p><figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs maxima">conda <span class="hljs-built_in">deactivate</span> 虚拟环境名<br></code></pre></td></tr></table></figure><p>查看虚拟环境中的库：</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">conda list</span><br></code></pre></td></tr></table></figure><p>删除虚拟环境：</p><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs lua">conda <span class="hljs-built_in">remove</span> -n 虚拟环境名 <span class="hljs-comment">--all </span><br></code></pre></td></tr></table></figure><p><a href="https://blog.csdn.net/u011385476/article/details/105277426">可参考博客</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>如何搭建自己的笔记博客</title>
     <link href="/2024/05/29/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E7%AC%94%E8%AE%B0%E5%8D%9A%E5%AE%A2/"/>
     <url>/2024/05/29/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E7%AC%94%E8%AE%B0%E5%8D%9A%E5%AE%A2/</url>

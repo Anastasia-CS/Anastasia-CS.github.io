@@ -4,30 +4,11 @@
   
   
   <entry>
-    <title>test</title>
-    <link href="/2024/05/29/test/"/>
-    <url>/2024/05/29/test/</url>
-    
-    <content type="html"><![CDATA[<p>=</p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>笔记</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>如何搭建自己的笔记博客</title>
     <link href="/2024/05/29/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E7%AC%94%E8%AE%B0%E5%8D%9A%E5%AE%A2/"/>
     <url>/2024/05/29/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E7%AC%94%E8%AE%B0%E5%8D%9A%E5%AE%A2/</url>
     
-    <content type="html"><![CDATA[<p>常用命令：</p><ol><li>部署（修改了<code>_config.yml</code>后需要执行该指令）</li></ol><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo g -d</span><br></code></pre></td></tr></table></figure><ol start="2"><li>本地启动</li></ol><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo s</span><br></code></pre></td></tr></table></figure><p><a href="https://blog.csdn.net/weixin_42365530/article/details/107750003">Hexo+gitee：30分钟搭建一个自己的个人博客网站</a></p><p>由于Gitee的Page停用，用Github搭建博客参照一下链接：</p><p><a href="https://blog.csdn.net/yaorongke/article/details/119089190">GitHub Pages + Hexo搭建个人博客网站</a></p>]]></content>
+    <content type="html"><![CDATA[<p>常用命令：</p><ol><li>部署（修改了包括<code>_config.yml</code>和<code>.md</code>文件在内的任何文件后，需要执行该指令；若不执行，则只能在本地更新，无法更新远程网页）</li></ol><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo g -d</span><br></code></pre></td></tr></table></figure><ol start="2"><li>本地启动</li></ol><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo s</span><br></code></pre></td></tr></table></figure><p><a href="https://blog.csdn.net/weixin_42365530/article/details/107750003">Hexo+gitee：30分钟搭建一个自己的个人博客网站</a></p><p>由于Gitee的Page停用，用Github搭建博客参照一下链接：</p><p><a href="https://blog.csdn.net/yaorongke/article/details/119089190">GitHub Pages + Hexo搭建个人博客网站</a></p><p>【注】<a href="https://anastasia-cs.github.io/">https://anastasia-cs.github.io/</a></p>]]></content>
     
     
     

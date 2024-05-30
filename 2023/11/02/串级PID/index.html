@@ -16,22 +16,26 @@
   <meta name="author" content="陈蜀">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Anaconda常用指令创建python虚拟环境： 1conda create -n 虚拟环境名  查看虚拟环境列表： 1conda env list  进入虚拟环境： 1conda activate 虚拟环境名  退出虚拟环境： 1conda deactivate 虚拟环境名  查看虚拟环境中的库： 1conda list  删除虚拟环境： 1conda remove -n 虚拟环境名 --al">
+    <meta name="description" content="串级PID 执行器可以是飞机模型。 1 单环PID 假设定高平飞，单环PID的反馈值是位置量，会导致到达指定高度时速度不为0，超调大、稳定慢。通俗地理解，一开始的高度差很大，所以PID计算输出的值就很大，因此初始速度会非常大，随着飞行器越来越接近期望位置，偏差越来越小，PID输出量逐渐减小，因此速度逐渐减小。如下图：  2 为什么外环输入是内环的期望参考博客：   ⭐串级 PID 为什么外环输入是">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Anaconda创建虚拟环境">
-<meta property="og:url" content="http://example.com/2023/11/25/Anaconda%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/index.html">
+<meta property="og:title" content="串级PID">
+<meta property="og:url" content="http://example.com/2023/11/02/%E4%B8%B2%E7%BA%A7PID/index.html">
 <meta property="og:site_name" content="Aliya">
-<meta property="og:description" content="Anaconda常用指令创建python虚拟环境： 1conda create -n 虚拟环境名  查看虚拟环境列表： 1conda env list  进入虚拟环境： 1conda activate 虚拟环境名  退出虚拟环境： 1conda deactivate 虚拟环境名  查看虚拟环境中的库： 1conda list  删除虚拟环境： 1conda remove -n 虚拟环境名 --al">
+<meta property="og:description" content="串级PID 执行器可以是飞机模型。 1 单环PID 假设定高平飞，单环PID的反馈值是位置量，会导致到达指定高度时速度不为0，超调大、稳定慢。通俗地理解，一开始的高度差很大，所以PID计算输出的值就很大，因此初始速度会非常大，随着飞行器越来越接近期望位置，偏差越来越小，PID输出量逐渐减小，因此速度逐渐减小。如下图：  2 为什么外环输入是内环的期望参考博客：   ⭐串级 PID 为什么外环输入是">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-11-25T07:22:17.000Z">
-<meta property="article:modified_time" content="2024-05-29T13:40:14.288Z">
+<meta property="og:image" content="http://example.com/.com//%E4%B8%B2%E7%BA%A7PID%E5%9B%BE.png">
+<meta property="og:image" content="http://example.com/.com//%E5%8D%95%E7%8E%AFPID%E5%9B%BE.png">
+<meta property="og:image" content="http://example.com/.com//%E5%8D%95%E7%8E%AFPID%E6%8E%A7%E5%88%B6%E6%95%88%E6%9E%9C%E5%9B%BE.png">
+<meta property="article:published_time" content="2023-11-02T14:51:59.000Z">
+<meta property="article:modified_time" content="2024-05-30T02:02:24.006Z">
 <meta property="article:author" content="陈蜀">
-<meta property="article:tag" content="python">
+<meta property="article:tag" content="控制">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/.com//%E4%B8%B2%E7%BA%A7PID%E5%9B%BE.png">
   
   
   
-  <title>Anaconda创建虚拟环境 - Aliya</title>
+  <title>串级PID - Aliya</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -197,7 +201,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Anaconda创建虚拟环境"></span>
+            <span id="subtitle" data-typed-text="串级PID"></span>
           
         </div>
 
@@ -208,8 +212,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-11-25 15:22" pubdate>
-          2023年11月25日 下午
+        <time datetime="2023-11-02 22:51" pubdate>
+          2023年11月2日 晚上
         </time>
       </span>
     
@@ -220,7 +224,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          80 字
+          170 字
         
       </span>
     
@@ -231,7 +235,7 @@
         
         
         
-          1 分钟
+          2 分钟
         
       </span>
     
@@ -268,32 +272,21 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Anaconda创建虚拟环境</h1>
+            <h1 id="seo-header">串级PID</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="Anaconda常用指令"><a href="#Anaconda常用指令" class="headerlink" title="Anaconda常用指令"></a>Anaconda常用指令</h1><p>创建python虚拟环境：</p>
-<figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs excel">conda create -<span class="hljs-built_in">n</span> 虚拟环境名<br></code></pre></td></tr></table></figure>
-
-<p>查看虚拟环境列表：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">conda <span class="hljs-built_in">env</span> list<br></code></pre></td></tr></table></figure>
-
-<p>进入虚拟环境：</p>
-<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs applescript">conda <span class="hljs-built_in">activate</span> 虚拟环境名<br></code></pre></td></tr></table></figure>
-
-<p>退出虚拟环境：</p>
-<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs maxima">conda <span class="hljs-built_in">deactivate</span> 虚拟环境名<br></code></pre></td></tr></table></figure>
-
-<p>查看虚拟环境中的库：</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">conda list</span><br></code></pre></td></tr></table></figure>
-
-<p>删除虚拟环境：</p>
-<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs lua">conda <span class="hljs-built_in">remove</span> -n 虚拟环境名 <span class="hljs-comment">--all </span><br></code></pre></td></tr></table></figure>
-
-
-
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/u011385476/article/details/105277426">可参考博客</a></p>
+                <h2 id="串级PID"><a href="#串级PID" class="headerlink" title="串级PID"></a>串级PID</h2><p><img src="/.com//%E4%B8%B2%E7%BA%A7PID%E5%9B%BE.png" srcset="/img/loading.gif" lazyload alt="串级PID图"></p>
+<p>执行器可以是飞机模型。</p>
+<h2 id="1-单环PID"><a href="#1-单环PID" class="headerlink" title="1 单环PID"></a>1 单环PID</h2><p><img src="/.com//%E5%8D%95%E7%8E%AFPID%E5%9B%BE.png" srcset="/img/loading.gif" lazyload alt="单环PID图"></p>
+<p>假设定高平飞，单环PID的反馈值是位置量，会导致到达指定高度时速度不为0，超调大、稳定慢。通俗地理解，一开始的高度差很大，所以PID计算输出的值就很大，因此初始速度会非常大，随着飞行器越来越接近期望位置，偏差越来越小，PID输出量逐渐减小，因此速度逐渐减小。如下图：</p>
+<p><img src="/.com//%E5%8D%95%E7%8E%AFPID%E6%8E%A7%E5%88%B6%E6%95%88%E6%9E%9C%E5%9B%BE.png" srcset="/img/loading.gif" lazyload alt="单环PID控制效果图"></p>
+<h2 id="2-为什么外环输入是内环的期望"><a href="#2-为什么外环输入是内环的期望" class="headerlink" title="2 为什么外环输入是内环的期望"></a>2 为什么外环输入是内环的期望</h2><p>参考博客：</p>
+<ol>
+<li> <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/135396298">⭐串级 PID 为什么外环输入是内环的期望</a> </li>
+<li> <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/352407769">到底什么是串级PID</a> </li>
+</ol>
 
                 
               </div>
@@ -306,7 +299,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/python/" class="print-no-link">#python</a>
+        <a href="/tags/%E6%8E%A7%E5%88%B6/" class="print-no-link">#控制</a>
       
     </div>
   
@@ -318,8 +311,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Anaconda创建虚拟环境</div>
-      <div>http://example.com/2023/11/25/Anaconda创建虚拟环境/</div>
+      <div>串级PID</div>
+      <div>http://example.com/2023/11/02/串级PID/</div>
     </div>
     <div class="license-meta">
       
@@ -331,7 +324,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年11月25日</div>
+          <div>2023年11月2日</div>
         </div>
       
       
@@ -363,21 +356,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/05/29/hello-world/" title="Hello World">
+                      <a href="/2023/11/25/Anaconda%E5%88%9B%E5%BB%BA%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/" title="Anaconda创建虚拟环境">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Hello World</span>
+                        <span class="hidden-mobile">Anaconda创建虚拟环境</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
-                    
-                      <a href="/2023/11/02/%E4%B8%B2%E7%BA%A7PID/" title="串级PID">
-                        <span class="hidden-mobile">串级PID</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
                     
                   </article>
                 </div>

@@ -8,7 +8,7 @@
     <link href="/2024/06/26/2025%E5%B1%8A%E7%A7%8B%E6%8B%9B%E4%B8%8E%E6%8F%90%E5%89%8D%E6%89%B9/"/>
     <url>/2024/06/26/2025%E5%B1%8A%E7%A7%8B%E6%8B%9B%E4%B8%8E%E6%8F%90%E5%89%8D%E6%89%B9/</url>
     
-    <content type="html"><![CDATA[<h1 id="开放日时间"><a href="#开放日时间" class="headerlink" title="开放日时间"></a>开放日时间</h1><pre><code class=" mermaid">gantttitle 各研究所开放日时间(2024年)dateFormat MM-DD华南通飞: 07-26,1d601所: 07-06, 4d中电10所: 07-02, 4d试飞院: 07-16, 3d508所: 07-04, 1d504所: 07-15, 4d212所: 07-16, 2d直升机所: 07-16, 3d611所: 07-24, 2d航天三院 (两批): 07-15, 12d中电14所: 07-14, 5d203所: 07-18, 3d</code></pre><p>212所：西安机电信息技术研究所</p><p><a href="https://blog.csdn.net/weixin_43207777/article/details/106331431">项目管理必备 | 10分钟学会用markdown高效画出超简洁的甘特图_markdown 甘特图-CSDN博客</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="开放日时间"><a href="#开放日时间" class="headerlink" title="开放日时间"></a>开放日时间</h1><pre class="mermaid">gantttitle 各研究所开放日时间(2024年)dateFormat MM-DD华南通飞: 07-26,1d601所: 07-06, 4d中电10所: 07-02, 4d试飞院: 07-16, 3d508所: 07-04, 1d504所: 07-15, 4d212所: 07-16, 2d直升机所: 07-16, 3d611所: 07-24, 2d航天三院 (两批): 07-15, 12d中电14所: 07-14, 5d203所: 07-18, 3d</pre><p>212所：西安机电信息技术研究所</p><p><a href="https://blog.csdn.net/weixin_43207777/article/details/106331431">项目管理必备 | 10分钟学会用markdown高效画出超简洁的甘特图_markdown 甘特图-CSDN博客</a></p>  <pre class="mermaid">    flowchart LR      A["JS"]      B["Mermaid"]      C["Markdown 原生"]      D["Markdown 定制"]      A --制作了--> B --内嵌到了 --> C --衍生了--> D</pre>]]></content>
     
     
     
